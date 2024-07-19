@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link https://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
@@ -25,16 +26,16 @@ class DashboardAsset extends AssetBundle
         "dist/otika/css/style.css",
         "dist/otika/css/components.css",
         "dist/otika/css/custom.css",
-       "dist/otika/css/app.min.css",
-       "dist/otika/bundles/bootstrap-daterangepicker/daterangepicker.css",
-       "dist/otika/bundles/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css",
-       "dist/otika/bundles/select2/dist/css/select2.min.css",
-       "dist/otika/bundles/jquery-selectric/selectric.css",
-       "dist/otika/bundles/bootstrap-timepicker/css/bootstrap-timepicker.min.css",
-       "dist/otika/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.css",
-       "dist/otika/css/style.css",
-       "dist/otika/css/components.css",
-       "dist/otika/css/custom.css",
+        "dist/otika/css/app.min.css",
+        "dist/otika/bundles/bootstrap-daterangepicker/daterangepicker.css",
+        "dist/otika/bundles/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css",
+        "dist/otika/bundles/select2/dist/css/select2.min.css",
+        "dist/otika/bundles/jquery-selectric/selectric.css",
+        "dist/otika/bundles/bootstrap-timepicker/css/bootstrap-timepicker.min.css",
+        "dist/otika/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.css",
+        "dist/otika/css/style.css",
+        "dist/otika/css/components.css",
+        "dist/otika/css/custom.css",
     ];
     public $js = [
         "dist/otika/js/app.min.js",
