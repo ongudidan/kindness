@@ -4,6 +4,7 @@
 /** @var string $content */
 
 use app\assets\FrontendAsset;
+use app\modules\dashboard\models\Contact;
 use app\widgets\Alert;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
@@ -11,7 +12,6 @@ use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 use yii\widgets\Menu;
 use yii\helpers\Url;
-use app\models\Contact;
 
 FrontendAsset::register($this);
 
