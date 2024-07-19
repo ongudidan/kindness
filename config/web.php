@@ -47,16 +47,17 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
+        // 'urlManager' => [
+        //     'enablePrettyUrl' => true,
+        //     'showScriptName' => false,
+        //     'rules' => [
+        //         'dashboard' => 'dashboard/default',
+        //         'site/gallery' => 'site/gallery',
+        //     ],
+        // ],
     ],
     'params' => $params,
+    'defaultRoute' => 'site/index'
 ];
 
 if (YII_ENV_DEV) {

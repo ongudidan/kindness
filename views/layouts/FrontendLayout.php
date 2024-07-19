@@ -12,6 +12,7 @@ use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 use yii\widgets\Menu;
 use yii\helpers\Url;
+// use yii\web\UrlManager
 
 FrontendAsset::register($this);
 
@@ -118,7 +119,9 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                                         'label' => 'Gallery',
                                         'url' => ['site/gallery'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/gallery']) == $currentUrl,
+                                        // 'active' => Url::to(['site/gallery']) == $currentUrl,
+                                        'active' => Yii::$app->urlManager->createUrl('site/gallery') == $currentUrl,
+
                                     ],
                                     [
                                         'label' => 'Causes',

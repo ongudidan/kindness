@@ -195,12 +195,50 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     <ul class="sidebar-menu">
                         <li class="dropdown active">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="briefcase"></i><span>Database tables</span></a>
-                            <ul class="dropdown-menu">
+                            <!-- <ul class="dropdown-menu">
                                 <li class="active"><a class="nav-link" href="index.php?r=dashboard/cause">Causes</a></li>
                                 <li><a class="nav-link" href="index.php?r=dashboard/gallery">Gallery</a></li>
                                 <li><a class="nav-link" href="index.php?r=dashboard/contact">Contacts</a></li>
                                 <li><a class="nav-link" href="index.php?r=dashboard/event">Events</a></li>
-                            </ul>
+                            </ul> -->
+                            <?php
+                            // Get the current URL
+                            $currentUrl = Url::current();
+
+                            echo Menu::widget([
+                                'activeCssClass' => 'active',
+                                'activateParents' => true,
+                                'encodeLabels' => false,
+                                'options' => ['class' => 'dropdown-menu'],
+                                'items' => [
+                                    [
+                                        'label' => 'Causes',
+                                        'url' => ['cause/'],
+                                        'options'=>['class'=>''],
+                                        'template' => "<a class='nav-link' href='{url}'>{label}</a>",
+                                        'active' => (strpos($currentUrl, Url::to(['cause/'])) === 0),
+                                    ],
+                                    [
+                                        'label' => 'Gallery',
+                                        'url' => ['gallery/'],
+                                        'template' => "<a class='nav-link' href='{url}'>{label}</a>",
+                                        'active' => (strpos($currentUrl, Url::to(['gallery/'])) === 0),
+                                    ],
+                                    [
+                                        'label' => 'Contacts',
+                                        'url' => ['contact/'],
+                                        'template' => "<a class='nav-link' href='{url}'>{label}</a>",
+                                        'active' => (strpos($currentUrl, Url::to(['contact/'])) === 0),
+                                    ],
+                                    [
+                                        'label' => 'Events',
+                                        'url' => ['event/'],
+                                        'template' => "<a class='nav-link' href='{url}'>{label}</a>",
+                                        'active' => (strpos($currentUrl, Url::to(['event/'])) === 0),
+                                    ],
+                                ],
+                            ]);
+                            ?>
                         </li>
                     </ul>
                 </aside>
