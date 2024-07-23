@@ -1,10 +1,16 @@
 <?php
 
 return [
+    // 'class' => 'yii\db\Connection',
+    // 'dsn' => "mysql:host=localhost;dbname={$_SERVER['CORE_DB_DATABASE']}",
+    // 'username' => $_SERVER['CORE_DB_USERNAME'],
+    // 'password' => $_SERVER['CORE_DB_USERNAME'],
+    // 'charset' => 'utf8',
+
     'class' => 'yii\db\Connection',
-    'dsn' => "mysql:host=localhost;dbname={$_SERVER['CORE_DB_DATABASE']}",
-    'username' => $_SERVER['CORE_DB_USERNAME'],
-    'password' => $_SERVER['CORE_DB_USERNAME'],
+    'dsn' => "mysql:host=localhost;dbname=kindness",
+    'username' => 'root',
+    'password' => 'root',
     'charset' => 'utf8',
 
     // Schema cache options (for production environment)
