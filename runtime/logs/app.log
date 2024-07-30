@@ -452,3 +452,1276 @@ $_SERVER = [
     ]
     'argc' => 2
 ]
+2024-07-30 12:00:24 [-][-][-][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#21 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#22 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#21 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#22 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#14 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#20 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known
+)
+
+2024-07-30 12:00:24 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LESS_TERMCAP_se' => '[0m'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'USER' => 'danny'
+    'LESS_TERMCAP_ue' => '[0m'
+    'SSH_AGENT_PID' => '1226'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'SHLVL' => '2'
+    'HOME' => '/home/danny'
+    'OLDPWD' => '/var/www/html/projects'
+    'DESKTOP_SESSION' => 'gnome'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'LESS_TERMCAP_so' => '[01;33m'
+    'SYSTEMD_EXEC_PID' => '1290'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=fbfe8a589aee759e2c0721d566a88202'
+    'DBUS_STARTER_BUS_TYPE' => 'session'
+    'COLORTERM' => 'truecolor'
+    'COMMAND_NOT_FOUND_INSTALL_PROMPT' => '1'
+    'IM_CONFIG_PHASE' => '1'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'LOGNAME' => 'danny'
+    'QT_AUTO_SCREEN_SCALE_FACTOR' => '0'
+    'LESS_TERMCAP_us' => '[1;32m'
+    '_' => '/usr/bin/php'
+    'XDG_SESSION_CLASS' => 'user'
+    'MEMORY_PRESSURE_WATCH' => '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@gnome.service/memory.pressure'
+    'USERNAME' => 'danny'
+    'TERM' => 'xterm-256color'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'WINDOWPATH' => '2'
+    'PATH' => '/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/danny/.dotnet/tools'
+    'SESSION_MANAGER' => 'local/danny:@/tmp/.ICE-unix/1290,unix/danny:/tmp/.ICE-unix/1290'
+    '_JAVA_OPTIONS' => '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+    'GDM_LANG' => 'C.UTF-8'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/edfe5ccc_f502_4063_a417_ba80b40113a3'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'LANG' => 'C.UTF-8'
+    'POWERSHELL_UPDATECHECK' => 'Off'
+    'XDG_SESSION_DESKTOP' => 'gnome'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_TERMINAL_SERVICE' => ':1.1394'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::ow=30;44:'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SHELL' => '/usr/bin/zsh'
+    'QT_ACCESSIBILITY' => '1'
+    'GDMSESSION' => 'gnome'
+    'LESS_TERMCAP_mb' => '[1;31m'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'QT_IM_MODULE' => 'ibus'
+    'LESS_TERMCAP_md' => '[1;36m'
+    'PWD' => '/var/www/html/projects/kindness'
+    'LESS_TERMCAP_me' => '[0m'
+    'XDG_DATA_DIRS' => '/usr/share/gnome:/home/danny/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'DBUS_STARTER_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=fbfe8a589aee759e2c0721d566a88202'
+    '_WSREP_START_POSITION' => ''
+    'VTE_VERSION' => '7592'
+    'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA='
+    'CHROME_DESKTOP' => 'code-url-handler.desktop'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'GNOME'
+    'GDK_BACKEND' => 'x11'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.91.1'
+    'GIT_ASKPASS' => '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => '/usr/share/code/code'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => ''
+    'VSCODE_GIT_ASKPASS_MAIN' => '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '/run/user/1000/vscode-git-0c3631c356.sock'
+    'VSCODE_INJECTION' => '1'
+    'ZDOTDIR' => '/home/danny'
+    'USER_ZDOTDIR' => '/home/danny'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1722340824.3585
+    'REQUEST_TIME' => 1722340824
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2024-07-30 12:02:52 [-][-][-][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#21 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#22 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#21 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#22 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#14 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#20 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known
+)
+
+2024-07-30 12:02:52 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LESS_TERMCAP_se' => '[0m'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'USER' => 'danny'
+    'LESS_TERMCAP_ue' => '[0m'
+    'SSH_AGENT_PID' => '1226'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'SHLVL' => '2'
+    'HOME' => '/home/danny'
+    'OLDPWD' => '/var/www/html/projects'
+    'DESKTOP_SESSION' => 'gnome'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'LESS_TERMCAP_so' => '[01;33m'
+    'SYSTEMD_EXEC_PID' => '1290'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=fbfe8a589aee759e2c0721d566a88202'
+    'DBUS_STARTER_BUS_TYPE' => 'session'
+    'COLORTERM' => 'truecolor'
+    'COMMAND_NOT_FOUND_INSTALL_PROMPT' => '1'
+    'IM_CONFIG_PHASE' => '1'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'LOGNAME' => 'danny'
+    'QT_AUTO_SCREEN_SCALE_FACTOR' => '0'
+    'LESS_TERMCAP_us' => '[1;32m'
+    '_' => '/usr/bin/php'
+    'XDG_SESSION_CLASS' => 'user'
+    'MEMORY_PRESSURE_WATCH' => '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@gnome.service/memory.pressure'
+    'USERNAME' => 'danny'
+    'TERM' => 'xterm-256color'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'WINDOWPATH' => '2'
+    'PATH' => '/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/danny/.dotnet/tools'
+    'SESSION_MANAGER' => 'local/danny:@/tmp/.ICE-unix/1290,unix/danny:/tmp/.ICE-unix/1290'
+    '_JAVA_OPTIONS' => '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+    'GDM_LANG' => 'C.UTF-8'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/edfe5ccc_f502_4063_a417_ba80b40113a3'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'LANG' => 'C.UTF-8'
+    'POWERSHELL_UPDATECHECK' => 'Off'
+    'XDG_SESSION_DESKTOP' => 'gnome'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_TERMINAL_SERVICE' => ':1.1394'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::ow=30;44:'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SHELL' => '/usr/bin/zsh'
+    'QT_ACCESSIBILITY' => '1'
+    'GDMSESSION' => 'gnome'
+    'LESS_TERMCAP_mb' => '[1;31m'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'QT_IM_MODULE' => 'ibus'
+    'LESS_TERMCAP_md' => '[1;36m'
+    'PWD' => '/var/www/html/projects/kindness'
+    'LESS_TERMCAP_me' => '[0m'
+    'XDG_DATA_DIRS' => '/usr/share/gnome:/home/danny/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'DBUS_STARTER_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=fbfe8a589aee759e2c0721d566a88202'
+    '_WSREP_START_POSITION' => ''
+    'VTE_VERSION' => '7592'
+    'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA='
+    'CHROME_DESKTOP' => 'code-url-handler.desktop'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'GNOME'
+    'GDK_BACKEND' => 'x11'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.91.1'
+    'GIT_ASKPASS' => '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => '/usr/share/code/code'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => ''
+    'VSCODE_GIT_ASKPASS_MAIN' => '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '/run/user/1000/vscode-git-0c3631c356.sock'
+    'VSCODE_INJECTION' => '1'
+    'ZDOTDIR' => '/home/danny'
+    'USER_ZDOTDIR' => '/home/danny'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1722340972.6386
+    'REQUEST_TIME' => 1722340972
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2024-07-30 12:03:08 [-][-][-][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#21 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#22 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#21 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#22 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#14 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#20 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known
+)
+
+2024-07-30 12:03:08 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LESS_TERMCAP_se' => '[0m'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'USER' => 'danny'
+    'LESS_TERMCAP_ue' => '[0m'
+    'SSH_AGENT_PID' => '1226'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'SHLVL' => '2'
+    'HOME' => '/home/danny'
+    'OLDPWD' => '/var/www/html/projects'
+    'DESKTOP_SESSION' => 'gnome'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'LESS_TERMCAP_so' => '[01;33m'
+    'SYSTEMD_EXEC_PID' => '1290'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=fbfe8a589aee759e2c0721d566a88202'
+    'DBUS_STARTER_BUS_TYPE' => 'session'
+    'COLORTERM' => 'truecolor'
+    'COMMAND_NOT_FOUND_INSTALL_PROMPT' => '1'
+    'IM_CONFIG_PHASE' => '1'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'LOGNAME' => 'danny'
+    'QT_AUTO_SCREEN_SCALE_FACTOR' => '0'
+    'LESS_TERMCAP_us' => '[1;32m'
+    '_' => '/usr/bin/php'
+    'XDG_SESSION_CLASS' => 'user'
+    'MEMORY_PRESSURE_WATCH' => '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@gnome.service/memory.pressure'
+    'USERNAME' => 'danny'
+    'TERM' => 'xterm-256color'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'WINDOWPATH' => '2'
+    'PATH' => '/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/danny/.dotnet/tools'
+    'SESSION_MANAGER' => 'local/danny:@/tmp/.ICE-unix/1290,unix/danny:/tmp/.ICE-unix/1290'
+    '_JAVA_OPTIONS' => '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+    'GDM_LANG' => 'C.UTF-8'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/edfe5ccc_f502_4063_a417_ba80b40113a3'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'LANG' => 'C.UTF-8'
+    'POWERSHELL_UPDATECHECK' => 'Off'
+    'XDG_SESSION_DESKTOP' => 'gnome'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_TERMINAL_SERVICE' => ':1.1394'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::ow=30;44:'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SHELL' => '/usr/bin/zsh'
+    'QT_ACCESSIBILITY' => '1'
+    'GDMSESSION' => 'gnome'
+    'LESS_TERMCAP_mb' => '[1;31m'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'QT_IM_MODULE' => 'ibus'
+    'LESS_TERMCAP_md' => '[1;36m'
+    'PWD' => '/var/www/html/projects/kindness'
+    'LESS_TERMCAP_me' => '[0m'
+    'XDG_DATA_DIRS' => '/usr/share/gnome:/home/danny/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'DBUS_STARTER_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=fbfe8a589aee759e2c0721d566a88202'
+    '_WSREP_START_POSITION' => ''
+    'VTE_VERSION' => '7592'
+    'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA='
+    'CHROME_DESKTOP' => 'code-url-handler.desktop'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'GNOME'
+    'GDK_BACKEND' => 'x11'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.91.1'
+    'GIT_ASKPASS' => '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => '/usr/share/code/code'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => ''
+    'VSCODE_GIT_ASKPASS_MAIN' => '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '/run/user/1000/vscode-git-0c3631c356.sock'
+    'VSCODE_INJECTION' => '1'
+    'ZDOTDIR' => '/home/danny'
+    'USER_ZDOTDIR' => '/home/danny'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1722340988.2358
+    'REQUEST_TIME' => 1722340988
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2024-07-30 12:04:23 [-][-][-][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#21 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#22 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#21 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#22 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#14 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#20 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known
+)
+
+2024-07-30 12:04:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LESS_TERMCAP_se' => '[0m'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'USER' => 'danny'
+    'LESS_TERMCAP_ue' => '[0m'
+    'SSH_AGENT_PID' => '1226'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'SHLVL' => '2'
+    'HOME' => '/home/danny'
+    'OLDPWD' => '/var/www/html/projects'
+    'DESKTOP_SESSION' => 'gnome'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'LESS_TERMCAP_so' => '[01;33m'
+    'SYSTEMD_EXEC_PID' => '1290'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=fbfe8a589aee759e2c0721d566a88202'
+    'DBUS_STARTER_BUS_TYPE' => 'session'
+    'COLORTERM' => 'truecolor'
+    'COMMAND_NOT_FOUND_INSTALL_PROMPT' => '1'
+    'IM_CONFIG_PHASE' => '1'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'LOGNAME' => 'danny'
+    'QT_AUTO_SCREEN_SCALE_FACTOR' => '0'
+    'LESS_TERMCAP_us' => '[1;32m'
+    '_' => '/usr/bin/php'
+    'XDG_SESSION_CLASS' => 'user'
+    'MEMORY_PRESSURE_WATCH' => '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@gnome.service/memory.pressure'
+    'USERNAME' => 'danny'
+    'TERM' => 'xterm-256color'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'WINDOWPATH' => '2'
+    'PATH' => '/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/danny/.dotnet/tools'
+    'SESSION_MANAGER' => 'local/danny:@/tmp/.ICE-unix/1290,unix/danny:/tmp/.ICE-unix/1290'
+    '_JAVA_OPTIONS' => '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+    'GDM_LANG' => 'C.UTF-8'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/edfe5ccc_f502_4063_a417_ba80b40113a3'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'LANG' => 'C.UTF-8'
+    'POWERSHELL_UPDATECHECK' => 'Off'
+    'XDG_SESSION_DESKTOP' => 'gnome'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_TERMINAL_SERVICE' => ':1.1394'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::ow=30;44:'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SHELL' => '/usr/bin/zsh'
+    'QT_ACCESSIBILITY' => '1'
+    'GDMSESSION' => 'gnome'
+    'LESS_TERMCAP_mb' => '[1;31m'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'QT_IM_MODULE' => 'ibus'
+    'LESS_TERMCAP_md' => '[1;36m'
+    'PWD' => '/var/www/html/projects/kindness'
+    'LESS_TERMCAP_me' => '[0m'
+    'XDG_DATA_DIRS' => '/usr/share/gnome:/home/danny/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'DBUS_STARTER_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=fbfe8a589aee759e2c0721d566a88202'
+    '_WSREP_START_POSITION' => ''
+    'VTE_VERSION' => '7592'
+    'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA='
+    'CHROME_DESKTOP' => 'code-url-handler.desktop'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'GNOME'
+    'GDK_BACKEND' => 'x11'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.91.1'
+    'GIT_ASKPASS' => '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => '/usr/share/code/code'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => ''
+    'VSCODE_GIT_ASKPASS_MAIN' => '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '/run/user/1000/vscode-git-0c3631c356.sock'
+    'VSCODE_INJECTION' => '1'
+    'ZDOTDIR' => '/home/danny'
+    'USER_ZDOTDIR' => '/home/danny'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1722341063.696
+    'REQUEST_TIME' => 1722341063
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2024-07-30 13:24:27 [-][-][-][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#21 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#22 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#21 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#22 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#14 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#20 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known
+)
+
+2024-07-30 13:24:27 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LESS_TERMCAP_se' => '[0m'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'USER' => 'danny'
+    'LESS_TERMCAP_ue' => '[0m'
+    'SSH_AGENT_PID' => '1226'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'SHLVL' => '2'
+    'HOME' => '/home/danny'
+    'OLDPWD' => '/var/www/html/projects'
+    'DESKTOP_SESSION' => 'gnome'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'LESS_TERMCAP_so' => '[01;33m'
+    'SYSTEMD_EXEC_PID' => '1290'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=fbfe8a589aee759e2c0721d566a88202'
+    'DBUS_STARTER_BUS_TYPE' => 'session'
+    'COLORTERM' => 'truecolor'
+    'COMMAND_NOT_FOUND_INSTALL_PROMPT' => '1'
+    'IM_CONFIG_PHASE' => '1'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'LOGNAME' => 'danny'
+    'QT_AUTO_SCREEN_SCALE_FACTOR' => '0'
+    'LESS_TERMCAP_us' => '[1;32m'
+    '_' => '/usr/bin/php'
+    'XDG_SESSION_CLASS' => 'user'
+    'MEMORY_PRESSURE_WATCH' => '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@gnome.service/memory.pressure'
+    'USERNAME' => 'danny'
+    'TERM' => 'xterm-256color'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'WINDOWPATH' => '2'
+    'PATH' => '/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/danny/.dotnet/tools'
+    'SESSION_MANAGER' => 'local/danny:@/tmp/.ICE-unix/1290,unix/danny:/tmp/.ICE-unix/1290'
+    '_JAVA_OPTIONS' => '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+    'GDM_LANG' => 'C.UTF-8'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/edfe5ccc_f502_4063_a417_ba80b40113a3'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'LANG' => 'C.UTF-8'
+    'POWERSHELL_UPDATECHECK' => 'Off'
+    'XDG_SESSION_DESKTOP' => 'gnome'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_TERMINAL_SERVICE' => ':1.1394'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::ow=30;44:'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SHELL' => '/usr/bin/zsh'
+    'QT_ACCESSIBILITY' => '1'
+    'GDMSESSION' => 'gnome'
+    'LESS_TERMCAP_mb' => '[1;31m'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'QT_IM_MODULE' => 'ibus'
+    'LESS_TERMCAP_md' => '[1;36m'
+    'PWD' => '/var/www/html/projects/kindness'
+    'LESS_TERMCAP_me' => '[0m'
+    'XDG_DATA_DIRS' => '/usr/share/gnome:/home/danny/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'DBUS_STARTER_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=fbfe8a589aee759e2c0721d566a88202'
+    '_WSREP_START_POSITION' => ''
+    'VTE_VERSION' => '7592'
+    'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA='
+    'CHROME_DESKTOP' => 'code-url-handler.desktop'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'GNOME'
+    'GDK_BACKEND' => 'x11'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.91.1'
+    'GIT_ASKPASS' => '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => '/usr/share/code/code'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => ''
+    'VSCODE_GIT_ASKPASS_MAIN' => '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '/run/user/1000/vscode-git-0c3631c356.sock'
+    'VSCODE_INJECTION' => '1'
+    'ZDOTDIR' => '/home/danny'
+    'USER_ZDOTDIR' => '/home/danny'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1722345867.7887
+    'REQUEST_TIME' => 1722345867
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2024-07-30 13:33:53 [-][-][-][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(460): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(123): yii\db\Command->queryColumn()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(235): yii\db\mysql\Schema->findTableNames()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(778): yii\db\Schema->getTableNames()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(205): yii\db\Schema->getSchemaMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(300): yii\db\Schema->getTableSchemas()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(486): yii\console\controllers\MigrateController->truncateDatabase()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionFresh()
+#14 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#21 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#22 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(460): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(123): yii\db\Command->queryColumn()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(235): yii\db\mysql\Schema->findTableNames()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(778): yii\db\Schema->getTableNames()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(205): yii\db\Schema->getSchemaMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(300): yii\db\Schema->getTableSchemas()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(486): yii\console\controllers\MigrateController->truncateDatabase()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionFresh()
+#14 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#21 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(460): yii\db\Command->queryInternal()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(123): yii\db\Command->queryColumn()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(235): yii\db\mysql\Schema->findTableNames()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(778): yii\db\Schema->getTableNames()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(205): yii\db\Schema->getSchemaMetadata()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(300): yii\db\Schema->getTableSchemas()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(486): yii\console\controllers\MigrateController->truncateDatabase()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionFresh()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#14 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#19 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known
+)
+
+2024-07-30 13:33:51 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LESS_TERMCAP_se' => '[0m'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'USER' => 'danny'
+    'LESS_TERMCAP_ue' => '[0m'
+    'SSH_AGENT_PID' => '1226'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'SHLVL' => '2'
+    'HOME' => '/home/danny'
+    'OLDPWD' => '/var/www/html/projects'
+    'DESKTOP_SESSION' => 'gnome'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'LESS_TERMCAP_so' => '[01;33m'
+    'SYSTEMD_EXEC_PID' => '1290'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=fbfe8a589aee759e2c0721d566a88202'
+    'DBUS_STARTER_BUS_TYPE' => 'session'
+    'COLORTERM' => 'truecolor'
+    'COMMAND_NOT_FOUND_INSTALL_PROMPT' => '1'
+    'IM_CONFIG_PHASE' => '1'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'LOGNAME' => 'danny'
+    'QT_AUTO_SCREEN_SCALE_FACTOR' => '0'
+    'LESS_TERMCAP_us' => '[1;32m'
+    '_' => '/usr/bin/php'
+    'XDG_SESSION_CLASS' => 'user'
+    'MEMORY_PRESSURE_WATCH' => '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@gnome.service/memory.pressure'
+    'USERNAME' => 'danny'
+    'TERM' => 'xterm-256color'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'WINDOWPATH' => '2'
+    'PATH' => '/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/danny/.dotnet/tools'
+    'SESSION_MANAGER' => 'local/danny:@/tmp/.ICE-unix/1290,unix/danny:/tmp/.ICE-unix/1290'
+    '_JAVA_OPTIONS' => '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+    'GDM_LANG' => 'C.UTF-8'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/edfe5ccc_f502_4063_a417_ba80b40113a3'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'LANG' => 'C.UTF-8'
+    'POWERSHELL_UPDATECHECK' => 'Off'
+    'XDG_SESSION_DESKTOP' => 'gnome'
+    'XMODIFIERS' => '@im=ibus'
+    'GNOME_TERMINAL_SERVICE' => ':1.1394'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::ow=30;44:'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SHELL' => '/usr/bin/zsh'
+    'QT_ACCESSIBILITY' => '1'
+    'GDMSESSION' => 'gnome'
+    'LESS_TERMCAP_mb' => '[1;31m'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'QT_IM_MODULE' => 'ibus'
+    'LESS_TERMCAP_md' => '[1;36m'
+    'PWD' => '/var/www/html/projects/kindness'
+    'LESS_TERMCAP_me' => '[0m'
+    'XDG_DATA_DIRS' => '/usr/share/gnome:/home/danny/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'DBUS_STARTER_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=fbfe8a589aee759e2c0721d566a88202'
+    '_WSREP_START_POSITION' => ''
+    'VTE_VERSION' => '7592'
+    'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA='
+    'CHROME_DESKTOP' => 'code-url-handler.desktop'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'GNOME'
+    'GDK_BACKEND' => 'x11'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.91.1'
+    'GIT_ASKPASS' => '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => '/usr/share/code/code'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => ''
+    'VSCODE_GIT_ASKPASS_MAIN' => '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '/run/user/1000/vscode-git-0c3631c356.sock'
+    'VSCODE_INJECTION' => '1'
+    'ZDOTDIR' => '/home/danny'
+    'USER_ZDOTDIR' => '/home/danny'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1722346431.7199
+    'REQUEST_TIME' => 1722346431
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/fresh'
+    ]
+    'argc' => 2
+]
+2024-07-30 14:40:29 [-][-][-][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#21 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#22 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#21 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#22 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(366): yii\db\Command->queryAll()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(134): yii\db\mysql\Schema->findColumns()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#14 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#20 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known
+)
+
+2024-07-30 14:40:29 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOME' => '/home/danny'
+    'LANG' => 'C.UTF-8'
+    'LOGNAME' => 'danny'
+    'PATH' => '/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/danny/.dotnet/tools'
+    'SHELL' => '/usr/bin/zsh'
+    'USER' => 'danny'
+    'XDG_DATA_DIRS' => '/usr/share/gnome:/home/danny/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    '_WSREP_START_POSITION' => ''
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'QT_ACCESSIBILITY' => '1'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'QT_AUTO_SCREEN_SCALE_FACTOR' => '0'
+    '_JAVA_OPTIONS' => '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+    'COMMAND_NOT_FOUND_INSTALL_PROMPT' => '1'
+    'POWERSHELL_UPDATECHECK' => 'Off'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'DESKTOP_SESSION' => 'gnome'
+    'DISPLAY' => ':0'
+    'GDMSESSION' => 'gnome'
+    'GDM_LANG' => 'C.UTF-8'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'IM_CONFIG_PHASE' => '1'
+    'PWD' => '/var/www/html/projects/kindness'
+    'QT_IM_MODULE' => 'ibus'
+    'SESSION_MANAGER' => 'local/danny:@/tmp/.ICE-unix/1249,unix/danny:/tmp/.ICE-unix/1249'
+    'SSH_AGENT_PID' => '1185'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'USERNAME' => 'danny'
+    'WINDOWPATH' => '2'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'XDG_SESSION_CLASS' => 'user'
+    'XDG_SESSION_DESKTOP' => 'gnome'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XMODIFIERS' => '@im=ibus'
+    'MANAGERPID' => '974'
+    'INVOCATION_ID' => 'd8a29a5e044e448cbefb9a9aa8726402'
+    'JOURNAL_STREAM' => '8:8084'
+    'SYSTEMD_EXEC_PID' => '1281'
+    'MEMORY_PRESSURE_WATCH' => '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure'
+    'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA='
+    'GJS_DEBUG_OUTPUT' => 'stderr'
+    'GJS_DEBUG_TOPICS' => 'JS ERROR;JS LOG'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/usr/share/applications/code.desktop'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '2983'
+    'CHROME_DESKTOP' => 'code-url-handler.desktop'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'GNOME'
+    'GDK_BACKEND' => 'x11'
+    'SHLVL' => '1'
+    'OLDPWD' => '/var/www/html/projects'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::ow=30;44:'
+    'LESS_TERMCAP_mb' => '[1;31m'
+    'LESS_TERMCAP_md' => '[1;36m'
+    'LESS_TERMCAP_me' => '[0m'
+    'LESS_TERMCAP_so' => '[01;33m'
+    'LESS_TERMCAP_se' => '[0m'
+    'LESS_TERMCAP_us' => '[1;32m'
+    'LESS_TERMCAP_ue' => '[0m'
+    '_' => '/usr/bin/php'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.91.1'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => '/usr/share/code/code'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => ''
+    'VSCODE_GIT_ASKPASS_MAIN' => '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '/run/user/1000/vscode-git-0c3631c356.sock'
+    'VSCODE_INJECTION' => '1'
+    'ZDOTDIR' => '/home/danny'
+    'USER_ZDOTDIR' => '/home/danny'
+    'TERM' => 'xterm-256color'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1722350429.233
+    'REQUEST_TIME' => 1722350429
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
