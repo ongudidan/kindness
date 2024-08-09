@@ -107,7 +107,7 @@ $this->title = 'Home';
                             </div>
                         </div>
                     </li>
-                    <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1000" data-thumb="images/slider/3.jpg" data-saveperformance="off" data-title="Professional Mechanics">
+                    <!-- <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1000" data-thumb="images/slider/3.jpg" data-saveperformance="off" data-title="Professional Mechanics">
                         <img src="images/slider/3.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
 
                         <div class="tp-caption lft tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-100" data-speed="1500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn" style="
@@ -235,7 +235,7 @@ $this->title = 'Home';
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
                 <div class="tp-bannertimer"></div>
             </div>
