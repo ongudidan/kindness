@@ -11,7 +11,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div>
     <!--Start slider-section-->
-    <section class="slider-section" style="background-image:url(images/slider/2.jpg);">
+    <section class="slider-section" style="background-image:url(/images/slider/2.jpg);">
         <div class="container">
             <div class="slider">
                 <div class="text team-light">

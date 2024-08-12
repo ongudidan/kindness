@@ -99,6 +99,12 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
+    public function actionForm()
+    {
+        $this->layout='FrontendLayout';
+        return $this->render('form');
+    }
+
     public function actionContact()
     {
         $this->layout='FrontendLayout';

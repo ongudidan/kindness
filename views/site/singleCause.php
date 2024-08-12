@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div>
     <!--Start slider-section-->
-    <section class="slider-section" style="background-image:url(images/slider/2.jpg);">
+    <section class="slider-section" style="background-image:url(/images/slider/2.jpg);">
         <div class="container">
             <div class="slider">
                 <div class="text team-light">
@@ -70,7 +70,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <div class="col-md-4 col-sm-4">
                                     <div class="donator">
                                         <div class="img-holder">
-                                            <figure><img src="images/blog/3.png" alt="Images"></figure>
+                                            <figure><img src="/images/blog/3.png" alt="Images"></figure>
                                         </div>
                                         <div class="donator-text">
                                             <h4>maria jim</h4>
@@ -82,7 +82,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <div class="col-md-4 col-sm-4">
                                     <div class="donator">
                                         <div class="img-holder">
-                                            <figure><img src="images/blog/4.png" alt="Images"></figure>
+                                            <figure><img src="/images/blog/4.png" alt="Images"></figure>
                                         </div>
                                         <div class="donator-text">
                                             <h4>Sara leon</h4>
@@ -94,7 +94,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <div class="col-md-4 col-sm-4">
                                     <div class="donator">
                                         <div class="img-holder">
-                                            <figure><img src="images/blog/3.png" alt="Images"></figure>
+                                            <figure><img src="/images/blog/3.png" alt="Images"></figure>
                                         </div>
                                         <div class="donator-text">
                                             <h4>maria jim</h4>

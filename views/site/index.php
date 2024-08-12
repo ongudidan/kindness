@@ -2,6 +2,8 @@
 
 /** @var yii\web\View $this */
 
+use yii\helpers\Url;
+
 $this->title = 'Home';
 ?>
 <div>
@@ -9,8 +11,8 @@ $this->title = 'Home';
         <div class="tp-banner-container">
             <div class="tp-banner">
                 <ul>
-                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/slider/1.jpg" data-saveperformance="off" data-title="Awsome Service">
-                        <img src="images/slider/1.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="/images/slider/1.jpg" data-saveperformance="off" data-title="Awsome Service">
+                        <img src="/images/slider/1.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
 
                         <div class="tp-caption lfl tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-100" data-speed="1500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn" style="
                                     z-index: 4;
@@ -68,38 +70,38 @@ $this->title = 'Home';
                             <div class="container">
                                 <div class="slider-box wow fadeInUp animated">
                                     <div class="slider-item bor">
-                                        <img src="images/resources/1.png" alt="Images" />
+                                        <img src="/images/resources/1.png" alt="Images" />
                                         <div class="text">
                                             <h4>Become a donator</h4>
                                             <p>
                                                 Duis sed odio sit amet nibh vulpuo<br />
                                                 ipsuy veli.
                                             </p>
-                                            <a href="#">donate now
+                                            <a href="<?= Url::to('/payment/mpesa-form')?>">donate now
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="slider-item bor">
-                                        <img src="images/resources/2.png" alt="Images" />
+                                        <img src="/images/resources/2.png" alt="Images" />
                                         <div class="text">
                                             <h4>Become a donator</h4>
                                             <p>
                                                 Duis sed odio sit amet nibh vulpuo<br />
                                                 ipsuy veli.
                                             </p>
-                                            <a href="#">donate now
+                                            <a href="<?= Url::to('/payment/mpesa-form')?>">donate now
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="slider-item">
-                                        <img src="images/resources/3.png" alt="Images" />
+                                        <img src="/images/resources/3.png" alt="Images" />
                                         <div class="text">
                                             "css/responsive.css" <h4>Become a donator</h4>
                                             <p>
                                                 Duis sed odio sit amet nibh vulpuo<br />
                                                 ipsuy veli.
                                             </p>
-                                            <a href="#">donate now
+                                            <a href="<?= Url::to('/payment/mpesa-form')?>">donate now
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
@@ -407,7 +409,7 @@ $this->title = 'Home';
     <!--.contact-seciton-->
     <section class="contact-seciton" style="background-image: url(images/blog/bg1.jpg)">
         <div class="img-left wow slideInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-            <figure><img src="images/blog/2.png" alt="Images" /></figure>
+            <figure><img src="/images/blog/2.png" alt="Images" /></figure>
         </div>
         <div class="container">
             <div class="row">
@@ -479,7 +481,7 @@ $this->title = 'Home';
                                 <div class="donator">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="images/blog/3.png" alt="Images" />
+                                            <img src="/images/blog/3.png" alt="Images" />
                                         </figure>
                                     </div>
                                     <div class="text">
@@ -493,7 +495,7 @@ $this->title = 'Home';
                                 <div class="donator">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="images/blog/4.png" alt="Images" />
+                                            <img src="/images/blog/4.png" alt="Images" />
                                         </figure>
                                     </div>
                                     <div class="text">

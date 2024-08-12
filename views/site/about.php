@@ -9,7 +9,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div>
     <!--Start slider-section-->
-    <section class="slider-section" style="background-image:url(images/slider/2.jpg);">
+    <section class="slider-section" style="background-image:url(/images/slider/2.jpg);">
         <div class="container">
             <div class="slider">
                 <div class="text">
@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <!-- video-preview start -->
-                    <div class="video-preview" style="background-image:url(images/blog/bg7.jpg);">
+                    <div class="video-preview" style="background-image:url(/images/blog/bg7.jpg);">
                         <ul class="v-container text-center">
                             <li>
                                 <a href="https://www.youtube.com/watch?v=rP2x7nrrDc4" class="html5lightbox"><i class="fa fa-play" aria-hidden="true"></i></a>
@@ -97,7 +97,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </section>
     <!--/mission-seciton-->
     <!--Start volunteer-section -->
-    <section class="volunteer-section ab-mar" style="background-image:url(images/blog/bg6.jpg);">
+    <section class="volunteer-section ab-mar" style="background-image:url(/images/blog/bg6.jpg);">
         <div class="container">
             <div class="volunteer-item">
                 <div class="section-title text-center">
@@ -124,7 +124,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <!-- Start single-item -->
                         <div class="single-item wow fadeInUp">
                             <div class="img-holder">
-                                <figure><a href="team.html"><img src="images/team/1.jpg" alt="Images"></a></figure>
+                                <figure><a href="team.html"><img src="/images/team/1.jpg" alt="Images"></a></figure>
                                 <!-- Start overlay -->
                                 <div class="overlay">
                                     <div class="link-icon">
@@ -154,7 +154,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <!-- Start single-item -->
                         <div class="single-item wow fadeInUp">
                             <div class="img-holder">
-                                <figure><a href="team.html"><img src="images/team/2.jpg" alt="Images"></a></figure>
+                                <figure><a href="team.html"><img src="/images/team/2.jpg" alt="Images"></a></figure>
                                 <!-- Start overlay -->
                                 <div class="overlay">
                                     <div class="link-icon">
@@ -184,7 +184,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <!-- Start single-item -->
                         <div class="single-item wow fadeInUp">
                             <div class="img-holder">
-                                <figure><a href="team.html"><img src="images/team/3.jpg" alt="Images"></a></figure>
+                                <figure><a href="team.html"><img src="/images/team/3.jpg" alt="Images"></a></figure>
                                 <!-- Start overlay -->
                                 <div class="overlay">
                                     <div class="link-icon">
@@ -214,7 +214,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <!-- Start single-item -->
                         <div class="single-item wow fadeInUp">
                             <div class="img-holder">
-                                <figure><a href="team.html"><img src="images/team/4.jpg" alt="Images"></a></figure>
+                                <figure><a href="team.html"><img src="/images/team/4.jpg" alt="Images"></a></figure>
                                 <!-- Start overlay -->
                                 <div class="overlay">
                                     <div class="link-icon">
@@ -246,7 +246,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </section>
     <!--/team-seciton-->
     <!--Start client-section -->
-    <section class="client-section" style="background-image:url(images/blog/bg5.jpg);">
+    <section class="client-section" style="background-image:url(/images/blog/bg5.jpg);">
         <div class="container">
             <div class="section-title text-center">
                 <h2>client <span>feedback</span></h2>
@@ -256,7 +256,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <!-- Start single-item -->
                     <div class="client">
                         <div class="img-holder">
-                            <figure><img src="images/blog/3.png" alt="Images"></figure>
+                            <figure><img src="/images/blog/3.png" alt="Images"></figure>
                         </div>
                         <div class="text">
                             <h4>dAVID BROWN</h4>
@@ -271,7 +271,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <!-- Start single-item -->
                     <div class="client">
                         <div class="img-holder">
-                            <figure><img src="images/blog/4.png" alt="Images"></figure>
+                            <figure><img src="/images/blog/4.png" alt="Images"></figure>
                         </div>
                         <div class="text">
                             <h4>Sara leon</h4>
@@ -286,7 +286,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <!-- Start single-item -->
                     <div class="client">
                         <div class="img-holder">
-                            <figure><img src="images/blog/4.png" alt="Images"></figure>
+                            <figure><img src="/images/blog/4.png" alt="Images"></figure>
                         </div>
                         <div class="text">
                             <h4>burtho leo</h4>

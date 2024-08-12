@@ -85,7 +85,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             <section class="mainmenu-area">
                 <div class="container">
                     <div class="logo pull-left">
-                        <a href="index.php"><img src="images/logo.png" alt="" /></a>
+                        <a href="<?= Url::to('/')?>"><img src="/images/logo.png" alt="" /></a>
                     </div>
                     <nav class="main-menu pull-left">
                         <div class="navbar-header">
@@ -110,44 +110,44 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                                 'items' => [
                                     [
                                         'label' => 'Home',
-                                        'url' => ['site/index'],
+                                        'url' => ['/site'],
                                         'options' => ['class' => 'dropdown'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/index']) == $currentUrl,
+                                        'active' => Url::to(['/site']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'Gallery',
-                                        'url' => ['site/gallery'],
+                                        'url' => ['/site/gallery'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        // 'active' => Url::to(['site/gallery']) == $currentUrl,
-                                        'active' => Yii::$app->urlManager->createUrl('site/gallery') == $currentUrl,
+                                        // 'active' => Url::to(['/site/gallery']) == $currentUrl,
+                                        'active' => Yii::$app->urlManager->createUrl('/site/gallery') == $currentUrl,
 
                                     ],
                                     [
                                         'label' => 'Causes',
-                                        'url' => ['site/cause'],
+                                        'url' => ['/site/cause'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/cause']) == $currentUrl,
+                                        'active' => Url::to(['/site/cause']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'Event',
-                                        'url' => ['site/event'],
+                                        'url' => ['/site/event'],
                                         'options' => ['class' => 'dropdown'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/event']) == $currentUrl,
+                                        'active' => Url::to(['/site/event']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'About',
-                                        'url' => ['site/about'],
+                                        'url' => ['/site/about'],
                                         'options' => ['class' => 'dropdown'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/about']) == $currentUrl,
+                                        'active' => Url::to(['/site/about']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'Contact',
-                                        'url' => ['site/contact'],
+                                        'url' => ['/site/contact'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/contact']) == $currentUrl,
+                                        'active' => Url::to(['/site/contact']) == $currentUrl,
                                     ],
                                 ],
                             ]);
@@ -165,42 +165,42 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                                 'items' => [
                                     [
                                         'label' => 'Home',
-                                        'url' => ['site/index'],
+                                        'url' => ['/site'],
                                         'options' => ['class' => 'dropdown'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/index']) == $currentUrl,
+                                        'active' => Url::to(['/site']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'Gallery',
-                                        'url' => ['site/gallery'],
+                                        'url' => ['/site/gallery'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/gallery']) == $currentUrl,
+                                        'active' => Url::to(['/site/gallery']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'Causes',
-                                        'url' => ['site/cause'],
+                                        'url' => ['/site/cause'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/cause']) == $currentUrl,
+                                        'active' => Url::to(['/site/cause']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'Event',
-                                        'url' => ['site/event'],
+                                        'url' => ['/site/event'],
                                         'options' => ['class' => 'dropdown'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/event']) == $currentUrl,
+                                        'active' => Url::to(['/site/event']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'About',
-                                        'url' => ['site/about'],
+                                        'url' => ['/site/about'],
                                         'options' => ['class' => 'dropdown'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/about']) == $currentUrl,
+                                        'active' => Url::to(['/site/about']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'Contact',
-                                        'url' => ['site/contact'],
+                                        'url' => ['/site/contact'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/contact']) == $currentUrl,
+                                        'active' => Url::to(['/site/contact']) == $currentUrl,
                                     ],
                                 ],
                             ]);
@@ -210,10 +210,10 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     <div class="signup">
                         <ul>
                             <li>
-                                <a href="index.php?r=site/login"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>login</a>
+                                <a href="<?= Url::to('/site/login')?>"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>login</a>
                             </li>
                             <li>
-                                <a href="index.php?r=dashboard"><span></span><i class="fa fa-user" aria-hidden="true"></i>Dashboard</a>
+                                <a href="<?= Url::to('/dashboard')?>"><span></span><i class="fa fa-user" aria-hidden="true"></i>Dashboard</a>
                             </li>
                         </ul>
                     </div>
@@ -223,7 +223,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             <section class="bounce-in-header">
                 <div class="container">
                     <div class="logo pull-left">
-                        <a href="index.php"><img src="images/logo.png" alt="" /></a>
+                        <a href="<?= Url::to('/site')?>"><img src="/images/logo.png" alt="" /></a>
                     </div>
                     <nav class="main-menu pull-left">
                         <div class="navbar-header">
@@ -247,42 +247,42 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                                 'items' => [
                                     [
                                         'label' => 'Home',
-                                        'url' => ['site/index'],
+                                        'url' => ['/site'],
                                         'options' => ['class' => 'dropdown'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/index']) == $currentUrl,
+                                        'active' => Url::to(['/site']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'Gallery',
-                                        'url' => ['site/gallery'],
+                                        'url' => ['/site/gallery'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/gallery']) == $currentUrl,
+                                        'active' => Url::to(['/site/gallery']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'Causes',
-                                        'url' => ['site/cause'],
+                                        'url' => ['/site/cause'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/cause']) == $currentUrl,
+                                        'active' => Url::to(['/site/cause']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'Event',
-                                        'url' => ['site/event'],
+                                        'url' => ['/site/event'],
                                         'options' => ['class' => 'dropdown'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/event']) == $currentUrl,
+                                        'active' => Url::to(['/site/event']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'About',
-                                        'url' => ['site/about'],
+                                        'url' => ['/site/about'],
                                         'options' => ['class' => 'dropdown'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/about']) == $currentUrl,
+                                        'active' => Url::to(['/site/about']) == $currentUrl,
                                     ],
                                     [
                                         'label' => 'Contact',
-                                        'url' => ['site/contact'],
+                                        'url' => ['/site/contact'],
                                         'template' => "<a href='{url}'>{label}</a>",
-                                        'active' => Url::to(['site/contact']) == $currentUrl,
+                                        'active' => Url::to(['/site/contact']) == $currentUrl,
                                     ],
                                 ],
                             ]);
@@ -301,42 +301,42 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                                     'items' => [
                                         [
                                             'label' => 'Home',
-                                            'url' => ['site/index'],
+                                            'url' => ['/site'],
                                             'options' => ['class' => 'dropdown'],
                                             'template' => "<a href='{url}'>{label}</a>",
-                                            'active' => Url::to(['site/index']) == $currentUrl,
+                                            'active' => Url::to(['/site']) == $currentUrl,
                                         ],
                                         [
                                             'label' => 'Gallery',
-                                            'url' => ['site/gallery'],
+                                            'url' => ['/site/gallery'],
                                             'template' => "<a href='{url}'>{label}</a>",
-                                            'active' => Url::to(['site/gallery']) == $currentUrl,
+                                            'active' => Url::to(['/site/gallery']) == $currentUrl,
                                         ],
                                         [
                                             'label' => 'Causes',
-                                            'url' => ['site/cause'],
+                                            'url' => ['/site/cause'],
                                             'template' => "<a href='{url}'>{label}</a>",
-                                            'active' => Url::to(['site/cause']) == $currentUrl,
+                                            'active' => Url::to(['/site/cause']) == $currentUrl,
                                         ],
                                         [
                                             'label' => 'Event',
-                                            'url' => ['site/event'],
+                                            'url' => ['/site/event'],
                                             'options' => ['class' => 'dropdown'],
                                             'template' => "<a href='{url}'>{label}</a>",
-                                            'active' => Url::to(['site/event']) == $currentUrl,
+                                            'active' => Url::to(['/site/event']) == $currentUrl,
                                         ],
                                         [
                                             'label' => 'About',
-                                            'url' => ['site/about'],
+                                            'url' => ['/site/about'],
                                             'options' => ['class' => 'dropdown'],
                                             'template' => "<a href='{url}'>{label}</a>",
-                                            'active' => Url::to(['site/about']) == $currentUrl,
+                                            'active' => Url::to(['/site/about']) == $currentUrl,
                                         ],
                                         [
                                             'label' => 'Contact',
-                                            'url' => ['site/contact'],
+                                            'url' => ['/site/contact'],
                                             'template' => "<a href='{url}'>{label}</a>",
-                                            'active' => Url::to(['site/contact']) == $currentUrl,
+                                            'active' => Url::to(['/site/contact']) == $currentUrl,
                                         ],
                                     ],
                                 ]);
@@ -349,7 +349,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                                 <a href="#"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>login</a>
                             </li>
                             <li>
-                                <a href="index.php?r=dashboard"><span></span><i class="fa fa-user" aria-hidden="true"></i>Dashboard</a>
+                                <a href="<?= Url::to('/dashboard')?>"><span></span><i class="fa fa-user" aria-hidden="true"></i>Dashboard</a>
                             </li>
                         </ul>
                     </div>
