@@ -1,0 +1,83 @@
+a:10:{s:6:"config";s:2023:"a:5:{s:10:"phpVersion";s:6:"8.2.21";s:10:"yiiVersion";s:6:"2.0.51";s:11:"application";a:8:{s:3:"yii";s:6:"2.0.51";s:4:"name";s:14:"My Application";s:7:"version";s:3:"1.0";s:8:"language";s:5:"en-US";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:6:"8.2.21";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:7:{s:25:"kartik-v/yii2-krajee-base";a:3:{s:4:"name";s:25:"kartik-v/yii2-krajee-base";s:7:"version";s:7:"3.0.5.0";s:5:"alias";a:1:{s:12:"@kartik/base";s:68:"/var/www/html/projects/kindness/vendor/kartik-v/yii2-krajee-base/src";}}s:31:"kartik-v/yii2-widget-datepicker";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-datepicker";s:7:"version";s:10:"dev-master";s:5:"alias";a:1:{s:12:"@kartik/date";s:74:"/var/www/html/projects/kindness/vendor/kartik-v/yii2-widget-datepicker/src";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:61:"/var/www/html/projects/kindness/vendor/yiisoft/yii2-faker/src";}}s:23:"yiisoft/yii2-bootstrap5";a:4:{s:4:"name";s:23:"yiisoft/yii2-bootstrap5";s:7:"version";s:7:"2.0.4.0";s:5:"alias";a:1:{s:15:"@yii/bootstrap5";s:66:"/var/www/html/projects/kindness/vendor/yiisoft/yii2-bootstrap5/src";}s:9:"bootstrap";s:40:"yii\bootstrap5\i18n\TranslationBootstrap";}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:8:"2.1.25.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:61:"/var/www/html/projects/kindness/vendor/yiisoft/yii2-debug/src";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.2.6.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:59:"/var/www/html/projects/kindness/vendor/yiisoft/yii2-gii/src";}}s:26:"yiisoft/yii2-symfonymailer";a:3:{s:4:"name";s:26:"yiisoft/yii2-symfonymailer";s:7:"version";s:7:"2.0.4.0";s:5:"alias";a:1:{s:18:"@yii/symfonymailer";s:69:"/var/www/html/projects/kindness/vendor/yiisoft/yii2-symfonymailer/src";}}}}";s:3:"log";s:9791:"a:1:{s:8:"messages";a:11:{i:0;a:6:{i:0;s:68:"Bootstrap with yii\bootstrap5\i18n\TranslationBootstrap::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1722346431.734432;i:4;a:0:{}i:5;i:2340320;}i:1;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1722346431.735165;i:4;a:0:{}i:5;i:2447352;}i:2;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1722346431.73517;i:4;a:0:{}i:5;i:2447616;}i:3;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1722346431.735343;i:4;a:0:{}i:5;i:2473520;}i:4;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1722346431.735348;i:4;a:0:{}i:5;i:2474536;}i:5;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1722346431.738362;i:4;a:0:{}i:5;i:2982104;}i:6;a:6:{i:0;s:27:"Route to run: migrate/fresh";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1722346431.745521;i:4;a:0:{}i:5;i:3921016;}i:7;a:6:{i:0;s:72:"Running action: yii\console\controllers\MigrateController::actionFresh()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1722346431.747275;i:4;a:0:{}i:5;i:4263912;}i:8;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1722346433.304226;i:4;a:0:{}i:5;i:4670728;}i:9;a:6:{i:0;s:57:"Opening DB connection: mysql:host=mariadb;dbname=kindness";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1722346433.304246;i:4;a:0:{}i:5;i:4671288;}i:12;a:6:{i:0;s:8075:"PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(460): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(123): yii\db\Command->queryColumn()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(235): yii\db\mysql\Schema->findTableNames()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(778): yii\db\Schema->getTableNames()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(205): yii\db\Schema->getSchemaMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(300): yii\db\Schema->getTableSchemas()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(486): yii\console\controllers\MigrateController->truncateDatabase()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionFresh()
+#14 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#21 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#22 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(460): yii\db\Command->queryInternal()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(123): yii\db\Command->queryColumn()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(235): yii\db\mysql\Schema->findTableNames()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(778): yii\db\Schema->getTableNames()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(205): yii\db\Schema->getSchemaMetadata()
+#11 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(300): yii\db\Schema->getTableSchemas()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(486): yii\console\controllers\MigrateController->truncateDatabase()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionFresh()
+#14 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#19 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#20 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#21 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known in /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Command.php(460): yii\db\Command->queryInternal()
+#5 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/mysql/Schema.php(123): yii\db\Command->queryColumn()
+#6 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(235): yii\db\mysql\Schema->findTableNames()
+#7 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(778): yii\db\Schema->getTableNames()
+#8 /var/www/html/projects/kindness/vendor/yiisoft/yii2/db/Schema.php(205): yii\db\Schema->getSchemaMetadata()
+#9 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/MigrateController.php(300): yii\db\Schema->getTableSchemas()
+#10 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(486): yii\console\controllers\MigrateController->truncateDatabase()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionFresh()
+#12 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#13 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#14 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#15 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#16 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#17 /var/www/html/projects/kindness/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#18 /var/www/html/projects/kindness/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#19 /var/www/html/projects/kindness/yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo for mariadb failed: Name or service not known
+)
+";i:1;i:1;i:2;s:16:"yii\db\Exception";i:3;d:1722346433.361332;i:4;a:0:{}i:5;i:4438104;}}}";s:9:"profiling";s:426:"a:3:{s:6:"memory";i:4901304;s:4:"time";d:1.6396169662475586;s:8:"messages";a:2:{i:10;a:6:{i:0;s:57:"Opening DB connection: mysql:host=mariadb;dbname=kindness";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1722346433.304247;i:4;a:0:{}i:5;i:4671504;}i:11;a:6:{i:0;s:57:"Opening DB connection: mysql:host=mariadb;dbname=kindness";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1722346433.361115;i:4;a:0:{}i:5;i:4690880;}}}";s:2:"db";s:27:"a:1:{s:8:"messages";a:0:{}}";s:5:"event";s:574:"a:3:{i:0;a:5:{s:4:"time";d:1722346431.742373;s:4:"name";s:13:"beforeRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:23:"yii\console\Application";}i:1;a:5:{s:4:"time";d:1722346431.746449;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:23:"yii\console\Application";}i:2;a:5:{s:4:"time";d:1722346431.746465;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:41:"yii\console\controllers\MigrateController";}}";s:4:"mail";s:6:"a:0:{}";s:8:"timeline";s:91:"a:3:{s:5:"start";d:1722346431.730326;s:3:"end";d:1722346433.369957;s:6:"memory";i:4901304;}";s:4:"dump";s:6:"a:0:{}";s:7:"summary";a:13:{s:3:"tag";s:13:"66a8ebbfb4658";s:3:"url";s:21:"php yii migrate/fresh";s:4:"ajax";i:0;s:6:"method";s:7:"COMMAND";s:2:"ip";s:5:"danny";s:4:"time";d:1722346431.719876;s:10:"statusCode";i:0;s:8:"sqlCount";i:0;s:21:"excessiveCallersCount";i:0;s:9:"mailCount";i:0;s:9:"mailFiles";a:0:{}s:10:"peakMemory";i:4901304;s:14:"processingTime";d:1.6396169662475586;}s:10:"exceptions";a:0:{}}
